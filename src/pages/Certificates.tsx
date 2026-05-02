@@ -3,13 +3,15 @@ import cert1 from "@/assets/cert-1.jpg";
 import cert2 from "@/assets/cert-2.jpg";
 import cert3 from "@/assets/cert-3.jpg";
 import cert4 from "@/assets/cert-4.jpg";
+import cert5 from "@/assets/cert-5.jpg";
 import { Award } from "lucide-react";
 
 const certs = [
-  { img: cert2, title: "Universidad Nacional Autónoma de México", desc: "Especialidad en Cirugía Oral y Maxilofacial · 2014–2018" },
-  { img: cert4, title: "Centro Médico Nacional Siglo XXI", desc: "Formación de Especialidad · 2014–2018" },
-  { img: cert1, title: "Cirugía Oral y Maxilofacial", desc: "Certificación de Especialidad" },
-  { img: cert3, title: "Colegio de Cirujanos Maxilofaciales", desc: "Miembro activo desde 2018" },
+  { img: cert1, title: "AOCMF Latin America", desc: "Seminar — Advances in Complex Facial Trauma Management · Guadalajara, 2016" },
+  { img: cert2, title: "Colegio Dental de Sonora, A.C.", desc: "Reconocimiento como ponente: Parálisis Facial — Tratamiento Quirúrgico · Hermosillo, 2018" },
+  { img: cert3, title: "XXII Seminario Ivoclar Vivadent", desc: "The Quality of Esthetics — Biomimetics State of the Art · CDMX, 2017" },
+  { img: cert4, title: "ICDE — Ivoclar Vivadent México", desc: "Técnicas de Elevación de Piso de Seno Maxilar para Colocación de Implantes · CDMX, 2017" },
+  { img: cert5, title: "Colegio de Cirujanos Maxilofaciales del Seguro Social", desc: "Certificado como Socio Colegiado" },
 ];
 
 const Certificates = () => (

@@ -104,7 +104,7 @@ const Home = () => {
         <div className="container mx-auto px-4 py-16 grid md:grid-cols-3 gap-6">
           {[
             { icon: MapPin, title: "Visítanos", text: "Av. San Luis Potosí 102, San Benito, Hermosillo" },
-            { icon: Clock, title: "Horario", text: "Lun–Vie 9–14 / 16–20 · Sáb 10–14" },
+            { icon: Clock, title: "Horario", text: "Lun–Vie 9:00–14:00 / 16:00–20:00 · Sáb 10:00–14:00" },
             { icon: Phone, title: "Llámanos", text: "662 245 7005 · 662 683 2347" },
           ].map(({ icon: Icon, title, text }) => (
             <div key={title} className="bg-background rounded-2xl p-7 shadow-soft">

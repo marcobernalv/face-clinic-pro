@@ -41,8 +41,8 @@ const Contact = () => {
       return;
     }
     setLoading(true);
-    const text = `Hola, soy ${form.name}.%0AServicio de interés: ${form.service}%0ATel: ${form.phone}%0AEmail: ${form.email}%0A%0A${form.message}`;
-    window.open(`https://wa.me/5216622457005?text=${encodeURIComponent(text).replace(/%2520/g,'%20')}`, "_blank");
+    const text = `*Nombre*: Hola, soy ${form.name}.\n\n*Servicio de interés*: ${form.service}.\n\n*Número*: ${form.phone}\n\n*Email*: ${form.email}\n\n*Mensaje*: ${form.message}`;
+    window.open(`https://wa.me/5216622457005?text=${encodeURIComponent(text)}`, "_blank");
     setTimeout(()=>{ setLoading(false); toast({ title: "¡Gracias!", description: "Te contactaremos a la brevedad." }); }, 600);
   };
 
@@ -117,8 +117,8 @@ const Contact = () => {
               <h3 className="font-serif text-xl">Horario de atención</h3>
             </div>
             <ul className="text-sm space-y-1.5 text-foreground/80">
-              <li className="flex justify-between"><span>Lunes – Viernes</span><span>9–14 / 16–20</span></li>
-              <li className="flex justify-between"><span>Sábado</span><span>10–14</span></li>
+              <li className="flex justify-between"><span>Lunes – Viernes</span><span>9:00–14:00 / 16:00–20:00</span></li>
+              <li className="flex justify-between"><span>Sábado</span><span>10:00–14:00</span></li>
               <li className="flex justify-between text-muted-foreground"><span>Domingo</span><span>Cerrado</span></li>
             </ul>
           </div>
@@ -127,7 +127,7 @@ const Contact = () => {
             <h3 className="font-serif text-xl mb-3">Síguenos</h3>
             <div className="flex gap-3">
               <a href="https://www.facebook.com/share/1CGWAg9rwi/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"><Facebook className="w-5 h-5"/></a>
-              <a href="https://www.facebook.com/share/1CGWAg9rwi/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"><Instagram className="w-5 h-5"/></a>
+              <a href="https://www.instagram.com/faceclinic_hmo/" target="_blank" rel="noopener noreferrer" className="w-11 h-11 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"><Instagram className="w-5 h-5"/></a>
             </div>
           </div>
         </div>

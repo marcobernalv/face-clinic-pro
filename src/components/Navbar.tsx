@@ -37,13 +37,17 @@ const Navbar = () => {
               to={l.to}
               end={l.to === "/"}
               className={({ isActive }) =>
-                `text-sm tracking-wide transition-colors ${isActive ? "text-primary" : "text-foreground/70 hover:text-primary"}`
+                `relative text-sm tracking-wide transition-all duration-300 hover:-translate-y-0.5 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-primary after:transition-all after:duration-300 ${
+                  isActive
+                    ? "text-primary after:w-full"
+                    : "text-foreground/70 hover:text-primary after:w-0 hover:after:w-full"
+                }`
               }
             >
               {l.label}
             </NavLink>
           ))}
-          <Button asChild variant="default" size="sm" className="rounded-full bg-gradient-primary border-0 shadow-soft">
+          <Button asChild variant="default" size="sm" className="rounded-full bg-gradient-primary border-0 shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95">
             <a href={WHATSAPP} target="_blank" rel="noopener noreferrer">
               <Phone className="w-4 h-4" /> Agendar Cita
             </a>

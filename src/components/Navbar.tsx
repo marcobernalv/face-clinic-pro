@@ -22,7 +22,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border">
       <nav className="container mx-auto flex items-center justify-between py-4 px-4">
         <Link to="/" className="group leading-tight transition-transform duration-300 hover:scale-[1.02]">
-          <div className="font-serif text-2xl text-foreground tracking-wide bg-gradient-primary bg-clip-text text-transparent">
+          <div className="font-serif text-2xl font-semibold text-primary tracking-wide leading-none">
             Face Clinic
           </div>
           <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground mt-0.5 transition-all duration-300 group-hover:tracking-[0.4em] group-hover:text-primary">

@@ -5,10 +5,7 @@ const Footer = () => (
   <footer className="bg-secondary/60 border-t border-border mt-20">
     <div className="container mx-auto px-4 py-14 grid gap-10 md:grid-cols-4">
       <div>
-        <div className="flex items-center gap-2 mb-4">
-          <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center text-primary-foreground font-serif text-xl">F</div>
-          <div className="font-serif text-xl">Face Clinic</div>
-        </div>
+        <div className="font-serif text-2xl text-primary font-semibold mb-4">Face Clinic</div>
         <p className="text-sm text-muted-foreground leading-relaxed">
           Cirugía maxilofacial y estética facial en Hermosillo. Resultados naturales, atención personalizada.
         </p>

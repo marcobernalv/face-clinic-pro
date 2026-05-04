@@ -22,10 +22,10 @@ const About = () => (
         <div className="space-y-5">
           <span className="text-xs uppercase tracking-[0.3em] text-primary">Sobre Nosotros</span>
           <h1 className="font-serif text-5xl md:text-6xl">Dra. Luz María López Saavedra</h1>
-          <p className="text-lg text-muted-foreground italic">Cirujano Maxilofacial y Especialista en Estética Facial · Hermosillo, Sonora</p>
+          <p className="text-lg text-muted-foreground italic">Especialista en Odontología – Cirugía Oral y Maxilofacial (UNAM) · Hermosillo, Sonora</p>
           <div className="flex flex-wrap gap-2 pt-1">
-            <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium tracking-wide">Cédula profesional: 7896543</span>
-            <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium tracking-wide">Cédula de especialidad: 11234567</span>
+            <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium tracking-wide">Cédula profesional: 055459</span>
+            <span className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium tracking-wide">Especialidad UNAM · 2018</span>
           </div>
           <p className="text-foreground/80 leading-relaxed">
             Con amplia experiencia en cirugía de trauma facial y cirugía ortognática, la Dra. Luz María se especializa en procedimientos mínimamente invasivos que reducen el daño a los tejidos y favorecen una recuperación más rápida.

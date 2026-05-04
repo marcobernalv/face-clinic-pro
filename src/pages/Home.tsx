@@ -23,7 +23,7 @@ const Home = () => {
               <span className="italic text-primary">confianza que dura.</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Clínica especializada en cirugía maxilofacial y estética facial. Resultados naturales, seguridad médica y atención personalizada de la Dra. Luz María López Saavedra.
+              Clínica especializada en cirugía maxilofacial y estética facial. Seguridad médica y atención personalizada de la Dra. Luz María López Saavedra.
             </p>
             <div className="flex flex-wrap gap-3 pt-2">
               <Button asChild size="lg" className="rounded-full bg-gradient-primary border-0 shadow-elegant text-base px-8">

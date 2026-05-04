@@ -13,40 +13,40 @@
     --popover: 0 0% 100%;
     --popover-foreground: 340 15% 18%;
 
-    /* Soft rose primary */
-    --primary: 345 55% 62%;
+    /* Subtle elegant violet primary */
+    --primary: 265 30% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 340 70% 78%;
+    --primary-glow: 265 40% 75%;
 
-    /* Nude secondary */
-    --secondary: 28 35% 92%;
-    --secondary-foreground: 340 20% 22%;
+    /* Soft neutral secondary */
+    --secondary: 265 20% 95%;
+    --secondary-foreground: 260 20% 22%;
 
-    --muted: 28 25% 95%;
-    --muted-foreground: 340 8% 45%;
+    --muted: 260 15% 96%;
+    --muted-foreground: 260 8% 45%;
 
-    --accent: 35 50% 80%;
-    --accent-foreground: 340 20% 22%;
+    --accent: 265 25% 88%;
+    --accent-foreground: 260 20% 22%;
 
-    --gold: 38 55% 58%;
+    --gold: 38 45% 58%;
     --gold-foreground: 0 0% 100%;
 
     --destructive: 0 70% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 30 25% 88%;
-    --input: 30 25% 90%;
-    --ring: 345 55% 62%;
+    --border: 260 15% 90%;
+    --input: 260 15% 92%;
+    --ring: 265 30% 55%;
 
     --radius: 1rem;
 
-    --gradient-soft: linear-gradient(135deg, hsl(28 40% 96%) 0%, hsl(345 40% 95%) 100%);
+    --gradient-soft: linear-gradient(135deg, hsl(260 30% 97%) 0%, hsl(265 30% 95%) 100%);
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-glow)) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(28 45% 96%) 0%, hsl(340 45% 94%) 50%, hsl(35 50% 92%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(260 35% 97%) 0%, hsl(265 35% 94%) 50%, hsl(270 30% 95%) 100%);
 
-    --shadow-soft: 0 4px 20px -4px hsl(345 30% 70% / 0.15);
-    --shadow-elegant: 0 20px 60px -15px hsl(345 40% 60% / 0.25);
-    --shadow-card: 0 8px 30px -8px hsl(340 20% 50% / 0.12);
+    --shadow-soft: 0 4px 20px -4px hsl(265 30% 60% / 0.15);
+    --shadow-elegant: 0 20px 60px -15px hsl(265 40% 50% / 0.25);
+    --shadow-card: 0 8px 30px -8px hsl(260 20% 50% / 0.12);
 
     --font-serif: 'Cormorant Garamond', serif;
     --font-sans: 'Inter', sans-serif;

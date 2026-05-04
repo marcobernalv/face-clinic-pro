@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, Stethoscope, Sparkles, Smile, Activity, Syringe, Scissors, ShieldCheck, Bone } from "lucide-react";
+import { treatments } from "@/data/treatments";
 
 const medical = [
   {
@@ -55,15 +56,28 @@ const aesthetic = [
   },
 ];
 
-const ServiceCard = ({ icon: Icon, name, desc }: any) => (
-  <div className="group bg-background border border-border rounded-2xl p-6 shadow-soft hover:shadow-elegant transition-all hover:-translate-y-1">
-    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-gradient-primary group-hover:text-primary-foreground transition-colors">
-      <Icon className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+const ServiceCard = ({ icon: Icon, name, desc, to }: any) => {
+  const inner = (
+    <div className="group h-full bg-background border border-border rounded-2xl p-6 shadow-soft hover:shadow-elegant transition-all hover:-translate-y-1">
+      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-gradient-primary group-hover:text-primary-foreground transition-colors">
+        <Icon className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+      </div>
+      <h3 className="font-serif text-xl mb-2">{name}</h3>
+      <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+      {to && (
+        <span className="inline-flex items-center gap-1 mt-4 text-sm text-primary group-hover:gap-2 transition-all">
+          Ver más <ArrowRight className="w-4 h-4" />
+        </span>
+      )}
     </div>
-    <h3 className="font-serif text-xl mb-2">{name}</h3>
-    <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
-  </div>
-);
+  );
+  return to ? <Link to={to} className="block h-full">{inner}</Link> : inner;
+};
+
+const slugMap: Record<string, string> = treatments.reduce((acc, t) => {
+  acc[t.name] = t.slug;
+  return acc;
+}, {} as Record<string, string>);
 
 const icons = [Stethoscope, Smile, Bone, Activity, ShieldCheck, Scissors, Sparkles, Syringe];
 
@@ -87,7 +101,7 @@ const Services = () => (
         </div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {medical.map((s, i) => <ServiceCard key={s.name} {...s} icon={icons[i % icons.length]} />)}
+        {medical.map((s, i) => <ServiceCard key={s.name} {...s} icon={icons[i % icons.length]} to={slugMap[s.name] ? `/servicios/${slugMap[s.name]}` : undefined} />)}
       </div>
     </section>
 

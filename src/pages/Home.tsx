@@ -71,7 +71,7 @@ const Home = () => {
           {[
             { icon: Award, label: "Cirujano certificada" },
             { icon: Heart, label: "Atención personalizada" },
-            { icon: Sparkles, label: "Resultados naturales" },
+            { icon: Sparkles, label: "Excelencia Médica" },
             { icon: Star, label: "Especialista de confianza" },
           ].map(({ icon: Icon, label }) => (
             <div key={label} className="flex flex-col items-center gap-2">

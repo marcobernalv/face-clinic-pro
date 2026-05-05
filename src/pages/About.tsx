@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ZoomIn } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import doctora from "@/assets/doctora-libro.jpg";
 import doctoraRx from "@/assets/doctora-rx.jpg";
 import consultorio from "@/assets/consultorio.jpg";
@@ -84,15 +85,40 @@ const About = () => (
             { src: cedulaReverso, label: "Cédula profesional · Reverso", caption: "Especialidad en Cirugía Oral y Maxilofacial" },
             { src: tituloEspecialidad, label: "Título de especialidad", caption: "Especialista en Cirugía Oral y Maxilofacial · UNAM" },
           ].map(({ src, label, caption }) => (
-            <figure key={label} className="bg-background rounded-2xl p-4 shadow-soft flex flex-col">
-              <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4] flex items-center justify-center">
-                <img src={src} alt={label} loading="lazy" className="w-full h-full object-contain" />
-              </div>
-              <figcaption className="mt-4 text-center">
-                <div className="font-medium text-sm">{label}</div>
-                <div className="text-xs text-muted-foreground mt-1">{caption}</div>
-              </figcaption>
-            </figure>
+            <Dialog key={label}>
+              <figure className="bg-background rounded-2xl p-4 shadow-soft flex flex-col group">
+                <DialogTrigger asChild>
+                  <button
+                    type="button"
+                    className="relative rounded-xl overflow-hidden bg-muted aspect-[3/4] flex items-center justify-center cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    aria-label={`Ver ${label} en tamaño completo`}
+                  >
+                    <img
+                      src={src}
+                      alt={label}
+                      loading="lazy"
+                      className="w-full h-full object-contain transition-transform duration-500 ease-out group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/30 transition-colors duration-300 flex items-center justify-center">
+                      <div className="opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 bg-background/90 backdrop-blur rounded-full px-4 py-2 flex items-center gap-2 text-sm font-medium text-foreground shadow-elegant">
+                        <ZoomIn className="w-4 h-4 text-primary" />
+                        Ver completa
+                      </div>
+                    </div>
+                  </button>
+                </DialogTrigger>
+                <figcaption className="mt-4 text-center">
+                  <div className="font-medium text-sm">{label}</div>
+                  <div className="text-xs text-muted-foreground mt-1">{caption}</div>
+                </figcaption>
+              </figure>
+              <DialogContent className="max-w-4xl p-2 sm:p-4 bg-background border-border">
+                <div className="w-full max-h-[85vh] overflow-auto rounded-lg">
+                  <img src={src} alt={label} className="w-full h-auto object-contain animate-scale-in" />
+                </div>
+                <p className="text-center text-sm text-muted-foreground pt-2">{label}</p>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
       </div>

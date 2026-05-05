@@ -5,6 +5,9 @@ import doctoraRx from "@/assets/doctora-rx.jpg";
 import consultorio from "@/assets/consultorio.jpg";
 import oficina from "@/assets/oficina.jpg";
 import antes from "@/assets/antes-despues.jpg";
+import cedulaFrente from "@/assets/cedula-frente.jpg";
+import cedulaReverso from "@/assets/cedula-reverso.jpg";
+import tituloEspecialidad from "@/assets/titulo-especialidad-1.jpg";
 
 const reviews = [
   { name: "D. Verónica G.", text: "Me brindó muy buena atención, con información muy detallada." },
@@ -67,6 +70,34 @@ const About = () => (
       </div>
     </section>
 
+    {/* Documentos oficiales */}
+    <section className="bg-gradient-soft py-20">
+      <div className="container mx-auto px-4">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <span className="text-xs uppercase tracking-[0.3em] text-primary">Documentos oficiales</span>
+          <h2 className="font-serif text-4xl md:text-5xl mt-3">Cédula y título profesional</h2>
+          <p className="text-muted-foreground mt-4">Acreditaciones que respaldan la formación y especialidad de la doctora.</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[
+            { src: cedulaFrente, label: "Cédula profesional · Frente", caption: "Cédula 055459 · Secretaría de Educación y Cultura, Sonora" },
+            { src: cedulaReverso, label: "Cédula profesional · Reverso", caption: "Especialidad en Cirugía Oral y Maxilofacial" },
+            { src: tituloEspecialidad, label: "Título de especialidad", caption: "Especialista en Cirugía Oral y Maxilofacial · UNAM" },
+          ].map(({ src, label, caption }) => (
+            <figure key={label} className="bg-background rounded-2xl p-4 shadow-soft flex flex-col">
+              <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4] flex items-center justify-center">
+                <img src={src} alt={label} loading="lazy" className="w-full h-full object-contain" />
+              </div>
+              <figcaption className="mt-4 text-center">
+                <div className="font-medium text-sm">{label}</div>
+                <div className="text-xs text-muted-foreground mt-1">{caption}</div>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* Why us */}
     <section className="bg-gradient-soft py-20">
       <div className="container mx-auto px-4">
@@ -79,7 +110,6 @@ const About = () => (
             { t: "Especialista certificada", d: "Cédula profesional vigente y formación en hospitales de alta especialidad." },
             { t: "Atención personalizada", d: "Cada paciente recibe un plan único pensado en su bienestar integral." },
             { t: "Técnica mínimamente invasiva", d: "Procedimientos que respetan los tejidos y aceleran tu recuperación." },
-            { t: "Resultados naturales", d: "Buscamos siempre la armonía facial, no la exageración." },
             { t: "Instalaciones modernas", d: "Consultorio limpio, equipado y diseñado para tu comodidad." },
             { t: "Trato cálido y humano", d: "Pacientes que vuelven de forma recurrente nos respaldan." },
           ].map(({t,d})=>(

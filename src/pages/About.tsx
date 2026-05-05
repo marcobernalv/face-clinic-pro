@@ -70,6 +70,34 @@ const About = () => (
       </div>
     </section>
 
+    {/* Documentos oficiales */}
+    <section className="bg-gradient-soft py-20">
+      <div className="container mx-auto px-4">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <span className="text-xs uppercase tracking-[0.3em] text-primary">Documentos oficiales</span>
+          <h2 className="font-serif text-4xl md:text-5xl mt-3">Cédula y título profesional</h2>
+          <p className="text-muted-foreground mt-4">Acreditaciones que respaldan la formación y especialidad de la doctora.</p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {[
+            { src: cedulaFrente, label: "Cédula profesional · Frente", caption: "Cédula 055459 · Secretaría de Educación y Cultura, Sonora" },
+            { src: cedulaReverso, label: "Cédula profesional · Reverso", caption: "Especialidad en Cirugía Oral y Maxilofacial" },
+            { src: tituloEspecialidad, label: "Título de especialidad", caption: "Especialista en Cirugía Oral y Maxilofacial · UNAM" },
+          ].map(({ src, label, caption }) => (
+            <figure key={label} className="bg-background rounded-2xl p-4 shadow-soft flex flex-col">
+              <div className="rounded-xl overflow-hidden bg-muted aspect-[3/4] flex items-center justify-center">
+                <img src={src} alt={label} loading="lazy" className="w-full h-full object-contain" />
+              </div>
+              <figcaption className="mt-4 text-center">
+                <div className="font-medium text-sm">{label}</div>
+                <div className="text-xs text-muted-foreground mt-1">{caption}</div>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+
     {/* Why us */}
     <section className="bg-gradient-soft py-20">
       <div className="container mx-auto px-4">

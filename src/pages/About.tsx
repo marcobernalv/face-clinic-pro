@@ -5,6 +5,9 @@ import doctoraRx from "@/assets/doctora-rx.jpg";
 import consultorio from "@/assets/consultorio.jpg";
 import oficina from "@/assets/oficina.jpg";
 import antes from "@/assets/antes-despues.jpg";
+import cedulaFrente from "@/assets/cedula-frente.jpg";
+import cedulaReverso from "@/assets/cedula-reverso.jpg";
+import tituloEspecialidad from "@/assets/titulo-especialidad-1.jpg";
 
 const reviews = [
   { name: "D. Verónica G.", text: "Me brindó muy buena atención, con información muy detallada." },
@@ -79,7 +82,6 @@ const About = () => (
             { t: "Especialista certificada", d: "Cédula profesional vigente y formación en hospitales de alta especialidad." },
             { t: "Atención personalizada", d: "Cada paciente recibe un plan único pensado en su bienestar integral." },
             { t: "Técnica mínimamente invasiva", d: "Procedimientos que respetan los tejidos y aceleran tu recuperación." },
-            { t: "Resultados naturales", d: "Buscamos siempre la armonía facial, no la exageración." },
             { t: "Instalaciones modernas", d: "Consultorio limpio, equipado y diseñado para tu comodidad." },
             { t: "Trato cálido y humano", d: "Pacientes que vuelven de forma recurrente nos respaldan." },
           ].map(({t,d})=>(

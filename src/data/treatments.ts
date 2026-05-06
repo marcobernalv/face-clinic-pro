@@ -88,6 +88,7 @@ export const treatments: Treatment[] = [
     slug: "injerto-de-hueso",
     name: "Injerto de Hueso",
     intro: "Regeneración ósea para preparar la zona antes de colocar implantes dentales.",
+    placeholderSlots: 1,
     paragraphs: [
       "El injerto de hueso es un procedimiento quirúrgico que permite recuperar el volumen óseo perdido en el maxilar o la mandíbula, generalmente como preparación previa a la colocación de implantes dentales.",
       "Se utilizan materiales biocompatibles que estimulan la formación de hueso nuevo, garantizando una base sólida y estable para los futuros implantes.",

@@ -69,7 +69,7 @@ const Home = () => {
             <div className="absolute -inset-3 bg-gradient-primary rounded-[2rem] blur-2xl opacity-15" />
             <div className="relative rounded-[2rem] overflow-hidden shadow-elegant border border-border bg-black">
               <video
-                src="/videos/portada.mp4"
+                src="/videos/VIDEO_PORTADA.MP4"
                 autoPlay
                 muted
                 loop

@@ -12,18 +12,7 @@ const Home = () => {
     <Layout>
       {/* Hero */}
       <section className="relative bg-gradient-hero overflow-hidden">
-        <video
-          src="/videos/portada.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
-        />
-        <div className="absolute inset-0 bg-gradient-hero/60 pointer-events-none" />
-        <div className="container relative mx-auto px-4 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-background/80 backdrop-blur border border-border">
               <Sparkles className="w-4 h-4 text-primary" />
@@ -71,6 +60,23 @@ const Home = () => {
                   <div className="text-xs text-muted-foreground">de experiencia</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container mx-auto px-4 pb-16 md:pb-24">
+          <div className="relative mx-auto max-w-5xl">
+            <div className="absolute -inset-3 bg-gradient-primary rounded-[2rem] blur-2xl opacity-15" />
+            <div className="relative rounded-[2rem] overflow-hidden shadow-elegant border border-border bg-black">
+              <video
+                src="/videos/portada.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className="w-full h-auto block aspect-video object-cover"
+              />
             </div>
           </div>
         </div>

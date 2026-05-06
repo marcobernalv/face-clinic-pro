@@ -63,6 +63,23 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <div className="container mx-auto px-4 pb-16 md:pb-24">
+          <div className="relative mx-auto max-w-5xl">
+            <div className="absolute -inset-3 bg-gradient-primary rounded-[2rem] blur-2xl opacity-15" />
+            <div className="relative rounded-[2rem] overflow-hidden shadow-elegant border border-border bg-black">
+              <video
+                src="/videos/portada.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="auto"
+                className="w-full h-auto block aspect-video object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Trust strip */}

@@ -3,6 +3,7 @@ export type Treatment = {
   name: string;
   intro: string;
   paragraphs: string[];
+  video?: string;
 };
 
 export const treatments: Treatment[] = [
@@ -10,6 +11,7 @@ export const treatments: Treatment[] = [
     slug: "implante-dental",
     name: "Implante Dental",
     intro: "Solución moderna, segura y duradera para reemplazar piezas dentales de forma fija.",
+    video: "/videos/v2.mp4",
     paragraphs: [
       "La pérdida de uno o varios dientes puede afectar tanto la apariencia como la funcionalidad de la boca. Los implantes dentales representan una solución moderna, segura y duradera para reemplazar piezas dentales de forma fija.",
       "Consisten en la colocación de un tornillo de titanio dentro del hueso maxilar o mandibular, el cual actúa como una raíz artificial. Sobre esta base se coloca una corona diseñada para imitar la forma, el color y la función de un diente natural.",
@@ -20,9 +22,42 @@ export const treatments: Treatment[] = [
     slug: "cirugia-ortognatica",
     name: "Cirugía Ortognática",
     intro: "Corrige alteraciones en la posición de los maxilares para mejorar función y estética facial.",
+    video: "/videos/v1.mp4",
     paragraphs: [
       "La cirugía ortognática es un procedimiento quirúrgico indicado para corregir alteraciones en la posición de los maxilares. Estas condiciones pueden provocar problemas al morder, hablar o incluso al respirar.",
       "Este tratamiento permite mejorar tanto la función como la estética facial, logrando una adecuada alineación de los maxilares. Generalmente se complementa con tratamiento de ortodoncia para obtener resultados óptimos y estables a largo plazo.",
+    ],
+  },
+  {
+    slug: "cirugia-menton",
+    name: "Cirugía de Mentón",
+    intro: "Procedimiento de mentoplastia para armonizar el perfil facial y mejorar la estética del rostro.",
+    paragraphs: [
+      "La cirugía de mentón, o mentoplastia, es un procedimiento quirúrgico que permite modificar la posición y el tamaño del mentón para lograr una mayor armonía facial.",
+      "Está indicada en pacientes con mentón retraído, prominente o asimétrico, y puede realizarse de forma aislada o combinada con cirugía ortognática para resultados integrales.",
+      "El tratamiento mejora tanto la estética del perfil como la proporción del rostro, brindando resultados naturales y duraderos.",
+    ],
+  },
+  {
+    slug: "atm",
+    name: "Trastornos de ATM",
+    intro: "Diagnóstico y tratamiento integral de los trastornos de la articulación temporomandibular.",
+    video: "/videos/v5.mp4",
+    paragraphs: [
+      "Los trastornos de la articulación temporomandibular (ATM) afectan la articulación que conecta la mandíbula con el cráneo, generando dolor, chasquidos, limitación al abrir la boca o dolores de cabeza frecuentes.",
+      "Su tratamiento puede incluir terapias conservadoras como férulas oclusales, fisioterapia y manejo del dolor, hasta procedimientos quirúrgicos especializados en casos avanzados.",
+      "Una valoración temprana permite mejorar la calidad de vida del paciente y prevenir complicaciones a largo plazo.",
+    ],
+  },
+  {
+    slug: "apnea-del-sueno",
+    name: "Apnea del Sueño",
+    intro: "Tratamiento quirúrgico especializado para mejorar la respiración y la calidad del sueño.",
+    video: "/videos/v4.mp4",
+    paragraphs: [
+      "La apnea obstructiva del sueño es una condición en la que la respiración se interrumpe repetidamente durante el sueño, afectando el descanso y la salud general del paciente.",
+      "Desde la cirugía maxilofacial, el tratamiento puede incluir el avance maxilomandibular, un procedimiento que aumenta el espacio de la vía aérea y reduce significativamente los episodios de apnea.",
+      "El abordaje correcto mejora la calidad del sueño, disminuye el ronquido y reduce riesgos cardiovasculares asociados a esta condición.",
     ],
   },
   {
@@ -38,9 +73,20 @@ export const treatments: Treatment[] = [
     slug: "cirugia-terceros-molares",
     name: "Cirugía de Terceros Molares",
     intro: "Extracción profesional de las muelas del juicio para prevenir complicaciones.",
+    video: "/videos/v3.mp4",
     paragraphs: [
       "La extracción de terceros molares, conocidos comúnmente como muelas del juicio, es uno de los procedimientos más habituales en la cirugía maxilofacial.",
       "Se realiza cuando estos dientes no tienen suficiente espacio para erupcionar correctamente, presentan mala posición o generan molestias, infecciones o daño a otros dientes. Su extracción permite evitar problemas futuros y mantener una adecuada salud bucal.",
+    ],
+  },
+  {
+    slug: "injerto-de-hueso",
+    name: "Injerto de Hueso",
+    intro: "Regeneración ósea para preparar la zona antes de colocar implantes dentales.",
+    paragraphs: [
+      "El injerto de hueso es un procedimiento quirúrgico que permite recuperar el volumen óseo perdido en el maxilar o la mandíbula, generalmente como preparación previa a la colocación de implantes dentales.",
+      "Se utilizan materiales biocompatibles que estimulan la formación de hueso nuevo, garantizando una base sólida y estable para los futuros implantes.",
+      "Este tratamiento amplía las posibilidades de rehabilitación en pacientes que han perdido hueso debido a extracciones, traumatismos o enfermedad periodontal.",
     ],
   },
   {

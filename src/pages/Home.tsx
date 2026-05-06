@@ -12,18 +12,7 @@ const Home = () => {
     <Layout>
       {/* Hero */}
       <section className="relative bg-gradient-hero overflow-hidden">
-        <video
-          src="/videos/portada.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none"
-        />
-        <div className="absolute inset-0 bg-gradient-hero/60 pointer-events-none" />
-        <div className="container relative mx-auto px-4 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-background/80 backdrop-blur border border-border">
               <Sparkles className="w-4 h-4 text-primary" />

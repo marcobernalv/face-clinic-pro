@@ -27,6 +27,17 @@ const Treatment = () => {
       </section>
 
       <section className="container mx-auto px-4 py-16 max-w-3xl">
+        {treatment.video && (
+          <div className="mb-12 rounded-2xl overflow-hidden shadow-elegant border border-border bg-black/5 animate-fade-in">
+            <video
+              src={treatment.video}
+              controls
+              preload="metadata"
+              playsInline
+              className="w-full h-auto block"
+            />
+          </div>
+        )}
         <div className="prose prose-lg max-w-none space-y-6">
           {treatment.paragraphs.map((p, i) => (
             <p key={i} className="text-foreground/80 leading-relaxed text-lg">

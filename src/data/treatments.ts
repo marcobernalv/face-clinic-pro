@@ -14,6 +14,7 @@ export const treatments: Treatment[] = [
     name: "Implante Dental",
     intro: "Solución moderna, segura y duradera para reemplazar piezas dentales de forma fija.",
     video: "/videos/v2.mp4",
+    placeholderSlots: 1,
     paragraphs: [
       "La pérdida de uno o varios dientes puede afectar tanto la apariencia como la funcionalidad de la boca. Los implantes dentales representan una solución moderna, segura y duradera para reemplazar piezas dentales de forma fija.",
       "Consisten en la colocación de un tornillo de titanio dentro del hueso maxilar o mandibular, el cual actúa como una raíz artificial. Sobre esta base se coloca una corona diseñada para imitar la forma, el color y la función de un diente natural.",
@@ -25,6 +26,7 @@ export const treatments: Treatment[] = [
     name: "Cirugía Ortognática",
     intro: "Corrige alteraciones en la posición de los maxilares para mejorar función y estética facial.",
     video: "/videos/v1.mp4",
+    placeholderSlots: 3,
     paragraphs: [
       "La cirugía ortognática es un procedimiento quirúrgico indicado para corregir alteraciones en la posición de los maxilares. Estas condiciones pueden provocar problemas al morder, hablar o incluso al respirar.",
       "Este tratamiento permite mejorar tanto la función como la estética facial, logrando una adecuada alineación de los maxilares. Generalmente se complementa con tratamiento de ortodoncia para obtener resultados óptimos y estables a largo plazo.",
@@ -34,6 +36,7 @@ export const treatments: Treatment[] = [
     slug: "cirugia-menton",
     name: "Cirugía de Mentón",
     intro: "Procedimiento de mentoplastia para armonizar el perfil facial y mejorar la estética del rostro.",
+    placeholderSlots: 2,
     paragraphs: [
       "La cirugía de mentón, o mentoplastia, es un procedimiento quirúrgico que permite modificar la posición y el tamaño del mentón para lograr una mayor armonía facial.",
       "Está indicada en pacientes con mentón retraído, prominente o asimétrico, y puede realizarse de forma aislada o combinada con cirugía ortognática para resultados integrales.",

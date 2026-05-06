@@ -25,7 +25,7 @@ export const treatments: Treatment[] = [
     slug: "cirugia-ortognatica",
     name: "Cirugía Ortognática",
     intro: "Corrige alteraciones en la posición de los maxilares para mejorar función y estética facial.",
-    video: 
+    videos: 
       "/videos/VIDEO_ORTOGNATICA_1.MP4",
       "/videos/VIDEO_ORTOGNATICA_2.MP4",
       "/videos/VIDEO_ORTOGNATICA_3.MP4",
@@ -39,7 +39,7 @@ export const treatments: Treatment[] = [
     slug: "cirugia-menton",
     name: "Cirugía de Mentón",
     intro: "Procedimiento de mentoplastia para armonizar el perfil facial y mejorar la estética del rostro.",
-    video: 
+    videos: 
       "/videos/VIDEO_MENTON_1.MP4",
       "/videos/VIDEO_MENTON_2.MP4",
     placeholderSlots: 2,

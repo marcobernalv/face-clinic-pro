@@ -27,7 +27,25 @@ const Treatment = () => {
       </section>
 
       <section className="container mx-auto px-4 py-16 max-w-3xl">
-        {treatment.video && (
+       {treatment.videos ? (
+        <div className="mb-12 grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {treatment.videos.map((video, i) => (
+            <div
+              key={i}
+              className="rounded-2xl overflow-hidden shadow-elegant border border-border bg-black/5 animate-fade-in"
+            >
+              <video
+                src={video}
+                controls
+                preload="metadata"
+                playsInline
+                className="w-full h-auto block"
+              />
+            </div>
+          ))}
+        </div>
+      ) : (
+        treatment.video && (
           <div className="mb-8 rounded-2xl overflow-hidden shadow-elegant border border-border bg-black/5 animate-fade-in">
             <video
               src={treatment.video}
@@ -37,27 +55,8 @@ const Treatment = () => {
               className="w-full h-auto block"
             />
           </div>
-        )}
-        {treatment.placeholderSlots && treatment.placeholderSlots > 0 && (
-          <div
-            className={`mb-12 grid gap-4 ${
-              treatment.placeholderSlots === 1
-                ? "grid-cols-1"
-                : treatment.placeholderSlots === 2
-                ? "grid-cols-1 sm:grid-cols-2"
-                : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-            }`}
-          >
-            {Array.from({ length: treatment.placeholderSlots }).map((_, i) => (
-              <div
-                key={i}
-                className="aspect-video rounded-2xl border border-dashed border-border bg-muted/40 shadow-soft flex items-center justify-center text-xs uppercase tracking-[0.25em] text-muted-foreground animate-fade-in"
-              >
-                Video {i + 1}
-              </div>
-            ))}
-          </div>
-        )}
+        )
+      )}
         <div className="prose prose-lg max-w-none space-y-6">
           {treatment.paragraphs.map((p, i) => (
             <p key={i} className="text-foreground/80 leading-relaxed text-lg">

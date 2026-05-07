@@ -106,9 +106,9 @@ const Home = () => {
         </div>
         <div className="order-1 lg:order-2 space-y-6">
           <span className="text-xs uppercase tracking-[0.3em] text-primary">Sobre la clínica</span>
-          <h2 className="font-serif text-4xl md:text-5xl">Cuidado facial con sello médico y mirada estética.</h2>
+          <h2 className="font-serif text-4xl md:text-5xl">Cirugía maxilofacial con precisión médica y visión estética.</h2>
           <p className="text-muted-foreground leading-relaxed">
-            En Face Clinic combinamos rigor médico con sensibilidad estética. Cada tratamiento se diseña a la medida, priorizando la armonía natural del rostro y el bienestar integral del paciente.
+            En Face Clinic ofrecemos atención especializada en cirugía maxilofacial, integrando diagnóstico, funcionalidad y armonía facial en cada tratamiento. Nuestro enfoque personalizado busca mejorar tanto la salud como la estética del paciente, brindando resultados naturales y seguros.
           </p>
           <Button asChild variant="outline" className="rounded-full border-primary/40">
             <Link to="/sobre-nosotros">Conoce a la Dra. Luz María <ArrowRight className="w-4 h-4" /></Link>

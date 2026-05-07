@@ -4,8 +4,9 @@ export type Treatment = {
   intro: string;
   paragraphs: string[];
   video?: string;
+  vidoes?: string[];
   /** Número de contenedores de video vacíos (placeholders) a renderizar */
-  placeholderSlots?: number;
+  
 };
 
 export const treatments: Treatment[] = [
@@ -25,11 +26,11 @@ export const treatments: Treatment[] = [
     slug: "cirugia-ortognatica",
     name: "Cirugía Ortognática",
     intro: "Corrige alteraciones en la posición de los maxilares para mejorar función y estética facial.",
-    videos: 
+    videos: [
       "/videos/VIDEO_ORTOGNATICA_1.MP4",
       "/videos/VIDEO_ORTOGNATICA_2.MP4",
       "/videos/VIDEO_ORTOGNATICA_3.MP4",
-    placeholderSlots: 3,
+    ],
     paragraphs: [
       "La cirugía ortognática es un procedimiento quirúrgico indicado para corregir alteraciones en la posición de los maxilares. Estas condiciones pueden provocar problemas al morder, hablar o incluso al respirar.",
       "Este tratamiento permite mejorar tanto la función como la estética facial, logrando una adecuada alineación de los maxilares. Generalmente se complementa con tratamiento de ortodoncia para obtener resultados óptimos y estables a largo plazo.",
@@ -39,10 +40,10 @@ export const treatments: Treatment[] = [
     slug: "cirugia-menton",
     name: "Cirugía de Mentón",
     intro: "Procedimiento de mentoplastia para armonizar el perfil facial y mejorar la estética del rostro.",
-    videos: 
+    videos: [
       "/videos/VIDEO_MENTON_1.MP4",
       "/videos/VIDEO_MENTON_2.MP4",
-    placeholderSlots: 2,
+    ],
     paragraphs: [
       "La cirugía de mentón, o mentoplastia, es un procedimiento quirúrgico que permite modificar la posición y el tamaño del mentón para lograr una mayor armonía facial.",
       "Está indicada en pacientes con mentón retraído, prominente o asimétrico, y puede realizarse de forma aislada o combinada con cirugía ortognática para resultados integrales.",

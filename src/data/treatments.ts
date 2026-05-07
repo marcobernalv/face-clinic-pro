@@ -15,7 +15,6 @@ export const treatments: Treatment[] = [
     name: "Implante Dental",
     intro: "Solución moderna, segura y duradera para reemplazar piezas dentales de forma fija.",
     video: "/videos/VIDEO_IMPLANTES.MP4",
-    placeholderSlots: 1,
     paragraphs: [
       "La pérdida de uno o varios dientes puede afectar tanto la apariencia como la funcionalidad de la boca. Los implantes dentales representan una solución moderna, segura y duradera para reemplazar piezas dentales de forma fija.",
       "Consisten en la colocación de un tornillo de titanio dentro del hueso maxilar o mandibular, el cual actúa como una raíz artificial. Sobre esta base se coloca una corona diseñada para imitar la forma, el color y la función de un diente natural.",
@@ -96,7 +95,6 @@ export const treatments: Treatment[] = [
     name: "Injerto de Hueso",
     intro: "Regeneración ósea para preparar la zona antes de colocar implantes dentales.",
     video: "/videos/VIDEO_INJERTO_HUESO.MP4",
-    placeholderSlots: 1,
     paragraphs: [
       "El injerto de hueso es un procedimiento quirúrgico que permite recuperar el volumen óseo perdido en el maxilar o la mandíbula, generalmente como preparación previa a la colocación de implantes dentales.",
       "Se utilizan materiales biocompatibles que estimulan la formación de hueso nuevo, garantizando una base sólida y estable para los futuros implantes.",

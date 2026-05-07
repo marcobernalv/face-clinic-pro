@@ -4,7 +4,7 @@ export type Treatment = {
   intro: string;
   paragraphs: string[];
   video?: string;
-  vidoes?: string[];
+  videos?: string[];
   /** Número de contenedores de video vacíos (placeholders) a renderizar */
   
 };

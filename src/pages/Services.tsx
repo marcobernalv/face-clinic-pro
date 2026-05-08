@@ -109,7 +109,7 @@ const Services = () => (
           <h2 className="font-serif text-4xl mt-2">Servicios médicos</h2>
         </div>
       </div>
-      <div className="flex gap-5 overflow-x-auto pb-4">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
         {medical.map((s, i) => <ServiceCard key={s.name} {...s} icon={icons[i % icons.length]} to={slugMap[s.name] ? `/servicios/${slugMap[s.name]}` : undefined} />)}
       </div>
     </section>
@@ -120,7 +120,7 @@ const Services = () => (
           <span className="text-xs uppercase tracking-[0.3em] text-primary">Estética Facial</span>
           <h2 className="font-serif text-4xl mt-2">Procedimientos estéticos</h2>
         </div>
-        <div className="flex gap-5 overflow-x-auto pb-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
           {aesthetic.map((s, i) => <ServiceCard key={s.name} {...s} icon={icons[(i+3) % icons.length]} to={slugMap[s.name] ? `/servicios/${slugMap[s.name]}` : undefined} />)}
         </div>
       </div>

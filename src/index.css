@@ -51,7 +51,14 @@
     --font-serif: 'Cormorant Garamond', serif;
     --font-sans: 'Inter', sans-serif;
   }
-}
+  
+  html,
+  body {
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
 
 @layer base {
   * { @apply border-border; }
@@ -64,6 +71,10 @@
   h1, h2, h3, h4 {
     font-family: var(--font-serif);
     @apply tracking-tight;
+  }
+  #root {
+    width: 100%;
+    min-height: 100vh;
   }
 }
 

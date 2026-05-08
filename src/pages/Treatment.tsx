@@ -59,6 +59,16 @@ const Treatment = () => {
           </div>
         )
       )}
+      {treatment.image && (
+        <div className="mb-8 rounded-2xl overflow-hidden shadow-elegant border border-border bg-black/5 animate-fade-in">
+          <img
+            src={treatment.image}
+            alt={treatment.name}
+            loading="lazy"
+            className="w-full h-auto block"
+          />
+        </div>
+      )}
         <div className="prose prose-lg max-w-none space-y-6">
           {treatment.paragraphs.map((p, i) => (
             <p key={i} className="text-foreground/80 leading-relaxed text-lg">
@@ -66,6 +76,20 @@ const Treatment = () => {
             </p>
           ))}
         </div>
+
+        {treatment.servicesList && (
+          <div className="mt-10 rounded-2xl border border-border bg-secondary/40 p-6 md:p-8 shadow-soft">
+            <h2 className="font-serif text-2xl mb-4">Tratamientos incluidos</h2>
+            <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2">
+              {treatment.servicesList.map((s) => (
+                <li key={s} className="flex items-start gap-2 text-foreground/80">
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  <span>{s}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div className="mt-12 flex flex-wrap gap-4">
           <Button asChild size="lg" className="rounded-full bg-gradient-primary border-0 shadow-elegant">

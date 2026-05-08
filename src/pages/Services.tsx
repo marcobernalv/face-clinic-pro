@@ -48,11 +48,11 @@ const aesthetic = [
   { name: "Rellenos dérmicos", desc: "Devuelve volumen y armoniza facciones con ácido hialurónico." },
   { name: "Blefaroplastia", desc: "Rejuvenece la mirada eliminando exceso de piel en párpados." },
   { name: "Lipopapada", desc: "Define el contorno mandibular y elimina papada con resultados visibles." },
-  { name: "CO2 fraccionado", desc: "Renueva la piel, atenúa cicatrices y manchas con láser de precisión." },
+  { name: "CO2 Fraccionado", desc: "Renueva la piel, atenúa cicatrices y manchas con láser de precisión." },
   { name: "Peeling y rejuvenecimiento", desc: "Tratamientos para luminosidad, textura y firmeza de la piel." },
   {
-    name: "Faciales con aparatología (incluye Radiofrecuencia)",
-    desc: "Protocolos personalizados con limpieza profunda, ultrasonido terapéutico y radiofrecuencia para tensar y reafirmar la piel del rostro de forma no invasiva.",
+    name: "Faciales con aparatología",
+    desc: "Oxy facial, Hydrafacial, Radiofrecuencia, Martillo frío, Dermapen, Lifting, Peelings y más.",
   },
 ];
 
@@ -112,7 +112,7 @@ const Services = () => (
           <h2 className="font-serif text-4xl mt-2">Procedimientos estéticos</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {aesthetic.map((s, i) => <ServiceCard key={s.name} {...s} icon={icons[(i+3) % icons.length]} />)}
+          {aesthetic.map((s, i) => <ServiceCard key={s.name} {...s} icon={icons[(i+3) % icons.length]} to={slugMap[s.name] ? `/servicios/${slugMap[s.name]}` : undefined} />)}
         </div>
       </div>
     </section>

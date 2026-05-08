@@ -74,7 +74,6 @@ const Home = () => {
                 muted
                 loop
                 playsInline
-                muted
                 preload="auto"
                 className="w-full h-auto block aspect-video object-cover"
               />

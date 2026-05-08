@@ -111,7 +111,7 @@ const Navbar = () => {
           open ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0 border-t-0"
         }`}
       >
-        <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
+        <div className="container mx-auto px-4 py-6 flex flex-col gap-4 max-h-[80vh] overflow-y-auto">
           {links.map((l, i) =>
             l.to === "/servicios" ? (
               <div key={l.to} style={{ transitionDelay: open ? `${i * 50}ms` : "0ms" }} className={`transition-all duration-300 ${open ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`}>
@@ -133,7 +133,11 @@ const Navbar = () => {
                     <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${submenuOpen ? "rotate-180" : ""}`} />
                   </button>
                 </div>
-                <div className={`overflow-hidden transition-all duration-300 ${submenuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div
+                  className={`transition-all duration-300 ${
+                    submenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                  } overflow-y-auto`}
+                >
                   <div className="pl-4 border-l border-border ml-1 mt-2 flex flex-col gap-1">
                     {treatments.map((t) => (
                       <NavLink

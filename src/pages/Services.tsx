@@ -35,7 +35,7 @@ const medical = [
   },
   {
     name: "Trastornos de la ATM",
-    desc: "Diagnóstico y tratamiento de la articulación temporomandibular y bruxismo, devolviendo función y comodidad.",
+    desc: "Diagnóstico y tratamiento de la articulación temporomandibular, devolviendo función y comodidad.",
   },
   {
     name: "Injerto y regeneración ósea",

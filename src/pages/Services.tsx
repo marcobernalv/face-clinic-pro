@@ -75,11 +75,11 @@ const ServiceCard = ({ icon: Icon, name, desc, to }: any) => {
   );
   
   return to ? (
-    <Link to={to} className="block shrink-0 w-[280px]">
+    <Link to={to} className="block">
       {inner}
     </Link>
   ) : (
-    <div className="shrink-0 w-[280px]">{inner}</div>
+    <div className="block">{inner}</div>
   );
 };
 

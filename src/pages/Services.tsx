@@ -102,7 +102,7 @@ const Services = () => (
       </div>
     </section>
 
-    <section className="container mx-auto px-4 py-20">
+    <section className="container mx-auto px-4 py-14 md:py-16">
       <div className="flex items-end justify-between mb-10 flex-wrap gap-4">
         <div>
           <span className="text-xs uppercase tracking-[0.3em] text-primary">Cirugía Maxilofacial</span>

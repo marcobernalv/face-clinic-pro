@@ -26,7 +26,7 @@ export const treatments: Treatment[] = [
     slug: "regeneracion-osea",
     name: "Regeneración Ósea",
     intro: "Procedimientos avanzados para recuperar volumen y calidad ósea.",
-    video: "/videos/VIDEO_REGENERACION_OSEA.MP4",
+    video: "/videos/VIDEO_REGENERACION.MP4",
     paragraphs: [
     "La regeneración ósea permite recuperar el volumen y calidad del hueso perdido mediante técnicas avanzadas y materiales biocompatibles, facilitando tratamientos reconstructivos y la colocación de implantes dentales.",
     ],
@@ -187,7 +187,7 @@ export const treatments: Treatment[] = [
     slug: "lipopapada",
     name: "Lipopapada",
     intro: "Define el contorno mandibular y elimina la papada con resultados visibles.",
-    image: "/images/lipopapada.jpg",
+    image: "/images/FOTO_LIPOPAPADA.jpg",
     paragraphs: [
       "La lipopapada es un procedimiento estético que elimina el exceso de grasa acumulada bajo el mentón, definiendo el contorno mandibular y mejorando el perfil facial.",
       "Es un tratamiento mínimamente invasivo, con resultados visibles y duraderos.",
@@ -197,7 +197,7 @@ export const treatments: Treatment[] = [
     slug: "co2-fraccionado",
     name: "CO2 Fraccionado",
     intro: "Rejuvenecimiento avanzado de la piel mediante láser fraccionado de CO2.",
-    image: "/images/co2-fraccionado.jpg",
+    image: "/images/FOTO_C02.jpg",
     paragraphs: [
       "El CO2 fraccionado es muy efectivo para tratar arrugas superficiales y profundas, cicatrices de acné, flacidez y manchas solares, logrando una piel más firme y uniforme.",
       "Es un procedimiento estético avanzado de rejuvenecimiento (resurfacing) que elimina capas superficiales de piel dañada mediante microcolumnas de calor, estimulando colágeno nuevo.",

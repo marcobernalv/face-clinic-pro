@@ -52,12 +52,13 @@ export const treatments: Treatment[] = [
   {
     slug: "atm",
     name: "Trastornos de ATM",
-    intro: "Diagnóstico y tratamiento integral de los trastornos de la articulación temporomandibular.",
+    intro: "Diagnóstico y tratamiento de la articulación temporomandibular, devolviendo función y comodidad.",
     video: "/videos/VIDEO_ATM.MP4",
     paragraphs: [
       "Los trastornos de la articulación temporomandibular (ATM) afectan la articulación que conecta la mandíbula con el cráneo, generando dolor, chasquidos, limitación al abrir la boca o dolores de cabeza frecuentes.",
       "Su tratamiento puede incluir terapias conservadoras como férulas oclusales, fisioterapia y manejo del dolor, hasta procedimientos quirúrgicos especializados en casos avanzados.",
       "Una valoración temprana permite mejorar la calidad de vida del paciente y prevenir complicaciones a largo plazo.",
+      "Bruxismo: el bruxismo es un hábito involuntario de apretar o rechinar los dientes que puede provocar dolor muscular, desgaste dental y molestias en la articulación temporomandibular.",
     ],
   },
   {

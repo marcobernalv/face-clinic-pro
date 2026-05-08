@@ -52,7 +52,6 @@ export const treatments: Treatment[] = [
     slug: "bruxismo",
     name: "Bruxismo",
     intro: "Tratamiento especializado para bruxismo.",
-    video: "/videos/VIDEO_BRUXISMO.MP4",
     paragraphs: [
       "El Bruxismo provoca desgaste dental, dolor mandibular, cefaleas y tensión.",
     ],

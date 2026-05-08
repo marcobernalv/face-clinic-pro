@@ -130,6 +130,6 @@ const Services = () => (
       </Button>
     </section>
   </Layout>
-)
+);
 
 export default Services;

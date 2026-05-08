@@ -62,8 +62,10 @@ const ServiceCard = ({ icon: Icon, name, desc, to }: any) => {
       <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-gradient-primary group-hover:text-primary-foreground transition-colors">
         <Icon className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
       </div>
+
       <h3 className="font-serif text-xl mb-2">{name}</h3>
       <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+
       {to && (
         <span className="inline-flex items-center gap-1 mt-4 text-sm text-primary group-hover:gap-2 transition-all">
           Ver más <ArrowRight className="w-4 h-4" />
@@ -71,6 +73,7 @@ const ServiceCard = ({ icon: Icon, name, desc, to }: any) => {
       )}
     </div>
   );
+  
   return to ? (
     <Link to={to} className="block shrink-0 w-[280px]">
       {inner}
@@ -78,6 +81,7 @@ const ServiceCard = ({ icon: Icon, name, desc, to }: any) => {
   ) : (
     <div className="shrink-0 w-[280px]">{inner}</div>
   );
+};
 
 const slugMap: Record<string, string> = treatments.reduce((acc, t) => {
   acc[t.name] = t.slug;

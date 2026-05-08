@@ -112,7 +112,7 @@ const Services = () => (
           <h2 className="font-serif text-4xl mt-2">Procedimientos estéticos</h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {aesthetic.map((s, i) => <ServiceCard key={s.name} {...s} icon={icons[(i+3) % icons.length]} />)}
+          {aesthetic.map((s, i) => <ServiceCard key={s.name} {...s} icon={icons[(i+3) % icons.length]} to={slugMap[s.name] ? `/servicios/${slugMap[s.name]}` : undefined} />)}
         </div>
       </div>
     </section>

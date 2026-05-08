@@ -39,6 +39,7 @@ const Treatment = () => {
                 controls
                 preload="metadata"
                 playsInline
+                muted
                 className="w-full h-auto block"
               />
             </div>
@@ -52,6 +53,7 @@ const Treatment = () => {
               controls
               preload="metadata"
               playsInline
+              muted
               className="w-full h-auto block"
             />
           </div>

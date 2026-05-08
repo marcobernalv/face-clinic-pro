@@ -41,7 +41,7 @@ export const treatments: Treatment[] = [
       "/videos/VIDEO_ORTOGNATICA_3.MP4",
     ],
     images: [
-      "/images/FOTO_ORTOGNATICA.jpg",
+      "/images/FOTO_ORTOGNATICA.JPG",
     ],
     paragraphs: [
       "La cirugía ortognática es un procedimiento quirúrgico indicado para corregir alteraciones en la posición de los maxilares. Estas condiciones pueden provocar problemas al morder, hablar o incluso al respirar.",
@@ -187,7 +187,7 @@ export const treatments: Treatment[] = [
     slug: "lipopapada",
     name: "Lipopapada",
     intro: "Define el contorno mandibular y elimina la papada con resultados visibles.",
-    image: "/images/FOTO_LIPOPAPADA.jpg",
+    image: "/images/FOTO_LIPOPAPADA.JPG",
     paragraphs: [
       "La lipopapada es un procedimiento estético que elimina el exceso de grasa acumulada bajo el mentón, definiendo el contorno mandibular y mejorando el perfil facial.",
       "Es un tratamiento mínimamente invasivo, con resultados visibles y duraderos.",
@@ -197,7 +197,7 @@ export const treatments: Treatment[] = [
     slug: "co2-fraccionado",
     name: "CO2 Fraccionado",
     intro: "Rejuvenecimiento avanzado de la piel mediante láser fraccionado de CO2.",
-    image: "/images/FOTO_C02.jpg",
+    image: "/images/FOTO_C02.JPG",
     paragraphs: [
       "El CO2 fraccionado es muy efectivo para tratar arrugas superficiales y profundas, cicatrices de acné, flacidez y manchas solares, logrando una piel más firme y uniforme.",
       "Es un procedimiento estético avanzado de rejuvenecimiento (resurfacing) que elimina capas superficiales de piel dañada mediante microcolumnas de calor, estimulando colágeno nuevo.",

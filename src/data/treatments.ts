@@ -31,9 +31,49 @@ export const treatments: Treatment[] = [
       "/videos/VIDEO_ORTOGNATICA_2.MP4",
       "/videos/VIDEO_ORTOGNATICA_3.MP4",
     ],
+    images: [
+      "/images/FOTO_ORTOGNATICA.jpg
+    ],
     paragraphs: [
       "La cirugía ortognática es un procedimiento quirúrgico indicado para corregir alteraciones en la posición de los maxilares. Estas condiciones pueden provocar problemas al morder, hablar o incluso al respirar.",
       "Este tratamiento permite mejorar tanto la función como la estética facial, logrando una adecuada alineación de los maxilares. Generalmente se complementa con tratamiento de ortodoncia para obtener resultados óptimos y estables a largo plazo.",
+    ],
+  },
+  {
+    slug: "bruxismo",
+    name: "Bruxismo",
+    intro: "Tratamiento especializado para bruxismo.",
+    video: "/videos/VIDEO_BRUXISMO.MP4",
+    paragraphs: [
+      "El Bruxismo provoca desgaste dental, dolor mandibular, cefaleas y tensión.",
+    ],
+  },
+  {
+    slug: "dolor-facial",
+    name: "Dolor Facial",
+    intro: "Diagnóstico y tratamiento del dolor facial.",
+    video: "/videos/VIDEO_DOLOR_FACIAL.MP4",
+    paragraphs: [
+      "Dolor que puede ser localizado o irradiado a otra parte de la cabeza.",
+    ],
+  },
+  {
+    slug: "neuralgia-del-trigemino",
+    name: "Neuralgia del Trigémino",
+    intro: "Tratamiento quirúrgico especializado para neuralgia del trigémino.",
+    video: "/videos/VIDEO_NEURALGIA.MP4",
+    paragraphs: [
+      "La neurectomía periférica del trigémino es un procedimiento quirúrgico seguro, sencillo y de bajo riesgo utilizado para tratar la neuralgia del trigémino refractaria (que no responde a fármacos) mediante la avulsión (extirpación parcial) de las ramas terminales del nervio.",
+    ],
+  },
+  {
+    slug: "blefaroplastia",
+    name: "Blefaroplastia",
+    intro: "Procedimiento estético avanzado para rejuvenecer la mirada.",
+    video: "/videos/VIDEO_BLEFAROPLASTIA.MP4",
+    paragraphs: [
+      "La blefaroplastia no quirúrgica con láser CO2 es un procedimiento estético avanzado que rejuvenece la mirada tensando la piel de los párpados sin bisturí, incisiones ni cicatrices visibles.",
+      "Utiliza energía térmica para contraer el exceso de piel, reducir arrugas finas y estimular el colágeno, ofreciendo resultados naturales con una rápida recuperación.",
     ],
   },
   {
@@ -54,7 +94,9 @@ export const treatments: Treatment[] = [
     slug: "atm",
     name: "Trastornos de ATM",
     intro: "Diagnóstico y tratamiento de la articulación temporomandibular, devolviendo función y comodidad.",
-    video: "/videos/VIDEO_ATM.MP4",
+    videos: 
+      "/videos/VIDEO_ATM.MP4",
+      "/videos/VIDEO_ATM_2.MP4",
     paragraphs: [
       "Los trastornos de la articulación temporomandibular (ATM) afectan la articulación que conecta la mandíbula con el cráneo, generando dolor, chasquidos, limitación al abrir la boca o dolores de cabeza frecuentes.",
       "Su tratamiento puede incluir terapias conservadoras como férulas oclusales, fisioterapia y manejo del dolor, hasta procedimientos quirúrgicos especializados en casos avanzados.",

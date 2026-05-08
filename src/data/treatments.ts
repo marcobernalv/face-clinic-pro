@@ -76,6 +76,7 @@ export const treatments: Treatment[] = [
     slug: "diente-retenido",
     name: "Diente Retenido",
     intro: "Atención especializada para dientes que no logran salir de manera adecuada.",
+    video: "/videos/VIDEO_DIENTE_RETENIDO.MP4",
     paragraphs: [
       "Un diente retenido es aquel que no logra salir de manera adecuada y permanece dentro del hueso o encía. Esta situación es frecuente en las muelas del juicio, aunque también puede presentarse en otros dientes.",
       "Puede ocasionar dolor, infecciones o afectar la posición de las piezas dentales cercanas. En muchos casos, se recomienda su extracción mediante un procedimiento quirúrgico para prevenir complicaciones.",

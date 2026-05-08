@@ -6,6 +6,7 @@ export type Treatment = {
   video?: string;
   videos?: string[];
   image?: string;
+  images?: string;
   servicesList?: string[];
 };
 

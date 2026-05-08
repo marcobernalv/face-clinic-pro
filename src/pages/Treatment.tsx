@@ -126,5 +126,6 @@ const Treatment = () => {
       </section>
     </Layout>
   );
+  };
 
-  export default Treatment;
+export default Treatment;

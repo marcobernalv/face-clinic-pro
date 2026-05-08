@@ -103,7 +103,7 @@ export const treatments: Treatment[] = [
     slug: "atm",
     name: "Trastornos de ATM",
     intro: "Diagnóstico y tratamiento de la articulación temporomandibular, devolviendo función y comodidad.",
-    videos: 
+    videos: [
       "/videos/VIDEO_ATM.MP4",
       "/videos/VIDEO_ATM_2.MP4",
     paragraphs: [

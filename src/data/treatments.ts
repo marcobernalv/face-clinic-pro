@@ -41,7 +41,7 @@ export const treatments: Treatment[] = [
       "/videos/VIDEO_ORTOGNATICA_3.MP4",
     ],
     images: [
-      "/images/FOTO_ORTOGNATICA.jpg
+      "/images/FOTO_ORTOGNATICA.jpg",
     ],
     paragraphs: [
       "La cirugía ortognática es un procedimiento quirúrgico indicado para corregir alteraciones en la posición de los maxilares. Estas condiciones pueden provocar problemas al morder, hablar o incluso al respirar.",

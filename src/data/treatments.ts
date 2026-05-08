@@ -129,6 +129,7 @@ export const treatments: Treatment[] = [
       "La frenilectomía es un procedimiento que consiste en la eliminación o modificación del frenillo, cuando este provoca limitaciones en el habla, movilidad o en la posición de los dientes.",
       "La apicectomía, por su parte, es una cirugía que se realiza en la punta de la raíz del diente para eliminar infecciones persistentes, especialmente cuando un tratamiento de conducto no ha logrado resolver el problema.",
     ],
+  },
   {
     slug: "lipopapada",
     name: "Lipopapada",

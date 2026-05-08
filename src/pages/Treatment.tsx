@@ -120,7 +120,7 @@ const Treatment = () => {
             </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="rounded-full">
-            <Link to="/servicios">Ver todos los servicios</Link>
+            <Link to="/servicios">Ver todos los ervicios</Link>
           </Button>
         </div>
       </section>

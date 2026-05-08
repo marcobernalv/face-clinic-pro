@@ -129,5 +129,43 @@ export const treatments: Treatment[] = [
       "La frenilectomía es un procedimiento que consiste en la eliminación o modificación del frenillo, cuando este provoca limitaciones en el habla, movilidad o en la posición de los dientes.",
       "La apicectomía, por su parte, es una cirugía que se realiza en la punta de la raíz del diente para eliminar infecciones persistentes, especialmente cuando un tratamiento de conducto no ha logrado resolver el problema.",
     ],
+  {
+    slug: "lipopapada",
+    name: "Lipopapada",
+    intro: "Define el contorno mandibular y elimina la papada con resultados visibles.",
+    image: "/images/lipopapada.jpg",
+    paragraphs: [
+      "La lipopapada es un procedimiento estético que elimina el exceso de grasa acumulada bajo el mentón, definiendo el contorno mandibular y mejorando el perfil facial.",
+      "Es un tratamiento mínimamente invasivo, con resultados visibles y duraderos.",
+    ],
+  },
+  {
+    slug: "co2-fraccionado",
+    name: "CO2 Fraccionado",
+    intro: "Rejuvenecimiento avanzado de la piel mediante láser fraccionado de CO2.",
+    image: "/images/co2-fraccionado.jpg",
+    paragraphs: [
+      "El CO2 fraccionado es muy efectivo para tratar arrugas superficiales y profundas, cicatrices de acné, flacidez y manchas solares, logrando una piel más firme y uniforme.",
+      "Es un procedimiento estético avanzado de rejuvenecimiento (resurfacing) que elimina capas superficiales de piel dañada mediante microcolumnas de calor, estimulando colágeno nuevo.",
+    ],
+  },
+  {
+    slug: "faciales-aparatologia",
+    name: "Faciales con aparatología",
+    intro: "Protocolos personalizados con tecnología avanzada para una piel firme, luminosa y saludable.",
+    paragraphs: [
+      "Combinamos diferentes equipos y técnicas para ofrecer tratamientos faciales completos, adaptados a las necesidades de cada paciente.",
+    ],
+    servicesList: [
+      "Oxy facial",
+      "Hydrafacial",
+      "Radiofrecuencia",
+      "Martillo frío",
+      "Dermapen",
+      "Lifting con radiofrecuencia",
+      "Peeling ultrasónico",
+      "Peeling con punta diamante",
+      "Peeling químico",
+    ],
   },
 ];

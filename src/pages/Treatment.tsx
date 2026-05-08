@@ -69,9 +69,31 @@ const Treatment = () => {
           />
         </div>
       )}
-        <div className="prose prose-lg max-w-none space-y-6">
-          {treatment.paragraphs.map((p, i) => (
-            <p key={i} className="text-foreground/80 leading-relaxed text-lg">
+
+      {treatment.images && (
+        <div className="mb-8 grid gap-4 grid-cols-1 sm:grid-cols-2">
+          {treatment.images.map((image, i) => (
+            <div
+              key={i}
+              className="rounded-2xl overflow-hidden shadow-elegant border border-border bg-black/5 animate-fade-in"
+            >
+              <img
+                src={image}
+                alt={treatment.name}
+                loading="lazy"
+                className="w-full h-auto block"
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
+      <div className="prose prose-lg max-w-none space-y-6">
+        {treatment.paragraphs.map((p, i) => (
+          <p 
+            key={i} 
+            className="text-foreground/80 leading-relaxed text-lg"
+          >
               {p}
             </p>
           ))}

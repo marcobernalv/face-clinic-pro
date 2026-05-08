@@ -106,6 +106,7 @@ export const treatments: Treatment[] = [
     videos: [
       "/videos/VIDEO_ATM.MP4",
       "/videos/VIDEO_ATM_2.MP4",
+    ],
     paragraphs: [
       "Los trastornos de la articulación temporomandibular (ATM) afectan la articulación que conecta la mandíbula con el cráneo, generando dolor, chasquidos, limitación al abrir la boca o dolores de cabeza frecuentes.",
       "Su tratamiento puede incluir terapias conservadoras como férulas oclusales, fisioterapia y manejo del dolor, hasta procedimientos quirúrgicos especializados en casos avanzados.",

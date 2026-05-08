@@ -23,6 +23,15 @@ export const treatments: Treatment[] = [
     ],
   },
   {
+    slug: "regeneracion-osea",
+    name: "Regeneración Ósea",
+    intro: "Procedimientos avanzados para recuperar volumen y calidad ósea.",
+    video: "/videos/VIDEO_REGENERACION_OSEA.MP4",
+    paragraphs: [
+    "La regeneración ósea permite recuperar el volumen y calidad del hueso perdido mediante técnicas avanzadas y materiales biocompatibles, facilitando tratamientos reconstructivos y la colocación de implantes dentales.",
+    ],
+  },
+  {
     slug: "cirugia-ortognatica",
     name: "Cirugía Ortognática",
     intro: "Corrige alteraciones en la posición de los maxilares para mejorar función y estética facial.",

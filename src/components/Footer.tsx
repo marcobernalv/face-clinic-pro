@@ -7,7 +7,8 @@ const Footer = () => (
       <div>
         <div className="font-serif text-2xl text-primary font-semibold mb-4">Face Clinic</div>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Dra. Luz María Lopez Saavedra Maxilofacial Hermosillo y estética facial. Excelencia medica y atención personalizada.
+          Dra. Luz María Lopez Saavedra. Maxilofacial Hermosillo 
+          Cirugía maxilofacial y estética facial. Excelencia medica y atención personalizada.
         </p>
       </div>
       <div>

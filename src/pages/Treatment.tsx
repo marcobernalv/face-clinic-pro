@@ -91,23 +91,43 @@ const Treatment = () => {
       <div className="prose prose-lg max-w-none space-y-6">
         {treatment.slug === "blefaroplastia" ? (
           <>
+            {/* NO QUIRÚRGICA */}
             <h3>No Quirúrgica</h3>
-            <p className="text-foreground/80 leading-relaxed text-lg">
-              La blefaroplastia no quirúrgica con láser CO2 es un procedimiento estético avanzado que rejuvenece la mirada tensando la piel de los párpados sin bisturí, incisiones ni cicatrices visibles.
-            </p>
 
-            <h3>Quirúrgica</h3>
-            <p className="text-foreground/80 leading-relaxed text-lg">
-              La blefaroplastia quirúrgica con remoción de piel elimina el exceso de piel flácida, bolsas de grasa y músculo debilitado en los párpados superiores o inferiores, mejorando la apariencia y en algunos casos el campo visual.
-            </p>
-            </>
-          ) : (
-            treatment.paragraphs.map((p, i) => (
+            {treatment.no_quirurgica.paragraphs.map((p, i) => (
               <p key={i} className="text-foreground/80 leading-relaxed text-lg">
                 {p}
               </p>
-            ))
-          )}
+            ))}
+
+            <img
+              src={treatment.no_quirurgica.image}
+              alt="Blefaroplastia No Quirúrgica"
+              className="w-full h-auto block"
+            />
+
+            {/* QUIRÚRGICA */}
+            <h3>Quirúrgica</h3>
+
+            {treatment.quirurgica.paragraphs.map((p, i) => (
+              <p key={i} className="text-foreground/80 leading-relaxed text-lg">
+                {p}
+              </p>
+            ))}
+
+            <img
+              src={treatment.quirurgica.image}
+              alt="Blefaroplastia Quirúrgica"
+              className="w-full h-auto block"
+            />
+          </>
+        ) : (
+          treatment.paragraphs.map((p, i) => (
+            <p key={i} className="text-foreground/80 leading-relaxed text-lg">
+              {p}
+            </p>
+          ))
+        )}
         </div>
 
         {treatment.servicesList && (

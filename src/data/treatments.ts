@@ -80,6 +80,7 @@ export const treatments: Treatment[] = [
     image: [
       "/videos/FOTO_BLEFAROPLASTIA.JPG",
       "/videos/FOTO_BLEFAROPLASTIA_2.JPG",
+    ],
 
     paragraphs: [
       "La blefaroplastia no quirúrgica con láser CO2 es un procedimiento estético avanzado que rejuvenece la mirada tensando la piel de los párpados sin bisturí, incisiones ni cicatrices visibles.",

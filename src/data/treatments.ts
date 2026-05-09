@@ -77,10 +77,14 @@ export const treatments: Treatment[] = [
     slug: "blefaroplastia",
     name: "Blefaroplastia",
     intro: "Procedimiento estético avanzado para rejuvenecer la mirada.",
-    image: "/videos/FOTO_BLEFAROPLASTIA.JPG",
+    image: [
+      "/videos/FOTO_BLEFAROPLASTIA.JPG",
+      "/videos/FOTO_BLEFAROPLASTIA_2.JPG",
+
     paragraphs: [
       "La blefaroplastia no quirúrgica con láser CO2 es un procedimiento estético avanzado que rejuvenece la mirada tensando la piel de los párpados sin bisturí, incisiones ni cicatrices visibles.",
       "Utiliza energía térmica para contraer el exceso de piel, reducir arrugas finas y estimular el colágeno, ofreciendo resultados naturales con una rápida recuperación.",
+      "La blefaroplastia con remoción de piel es un procedimiento quirúrgico que elimina el exceso de piel flácida, bolsas de grasa y músculo debilitado en los párpados superiores o inferiores. Corrige la mirada cansada y los párpados caídos, logrando una apariencia rejuvenecida y, a menudo, mejorando el campo visual si la piel obstruía la vista.",
     ],
   },
   {

@@ -37,7 +37,6 @@ export const treatments: Treatment[] = [
     intro: "Corrige alteraciones en la posición de los maxilares para mejorar función y estética facial.",
     videos: [
       "/videos/VIDEO_ORTOGNATICA_1.MP4",
-      "/videos/VIDEO_ORTOGNATICA_2.MP4",
       "/videos/VIDEO_ORTOGNATICA_3.MP4",
     ],
     images: [
@@ -196,7 +195,7 @@ export const treatments: Treatment[] = [
     slug: "co2-fraccionado",
     name: "CO2 Fraccionado",
     intro: "Rejuvenecimiento avanzado de la piel mediante láser fraccionado de CO2.",
-    image: "/videos/FOTO_C02.jpg",
+    image: "/videos/FOTO_C02.JPG",
     paragraphs: [
       "El CO2 fraccionado es muy efectivo para tratar arrugas superficiales y profundas, cicatrices de acné, flacidez y manchas solares, logrando una piel más firme y uniforme.",
       "Es un procedimiento estético avanzado de rejuvenecimiento (resurfacing) que elimina capas superficiales de piel dañada mediante microcolumnas de calor, estimulando colágeno nuevo.",

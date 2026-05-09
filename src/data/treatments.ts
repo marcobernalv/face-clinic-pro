@@ -92,8 +92,9 @@ export const treatments: Treatment[] = [
         "Corrige la mirada cansada y los párpados caídos, logrando una apariencia rejuvenecida y, a menudo, mejorando el campo visual si la piel obstruía la vista.",
     ],
     image: "/videos/FOTO_BLEFAROPLASTIA_2.JPG",
-  },
-  {
+  }
+},
+{
     slug: "cirugia-menton",
     name: "Cirugía de Mentón",
     intro: "Procedimiento de mentoplastia para armonizar el perfil facial y mejorar la estética del rostro.",

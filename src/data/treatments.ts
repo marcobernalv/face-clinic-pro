@@ -196,7 +196,7 @@ export const treatments: Treatment[] = [
     slug: "co2-fraccionado",
     name: "CO2 Fraccionado",
     intro: "Rejuvenecimiento avanzado de la piel mediante láser fraccionado de CO2.",
-    image: "/videos/FOTO_C02.JPG",
+    image: "/videos/FOTO_C02.jpg",
     paragraphs: [
       "El CO2 fraccionado es muy efectivo para tratar arrugas superficiales y profundas, cicatrices de acné, flacidez y manchas solares, logrando una piel más firme y uniforme.",
       "Es un procedimiento estético avanzado de rejuvenecimiento (resurfacing) que elimina capas superficiales de piel dañada mediante microcolumnas de calor, estimulando colágeno nuevo.",

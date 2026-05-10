@@ -59,7 +59,7 @@ export const treatments: Treatment[] = [
     slug: "dolor-facial",
     name: "Dolor Facial",
     intro: "Diagnóstico y tratamiento del dolor facial.",
-    video: "/videos/VIDEO_DOLOR_FACIAL.MP4",
+    image: "/videos/FOTO_DOLORFACIAL.JPG",
     paragraphs: [
       "Dolor que puede ser localizado o irradiado a otra parte de la cabeza.",
     ],
@@ -68,7 +68,7 @@ export const treatments: Treatment[] = [
     slug: "neuralgia-del-trigemino",
     name: "Neuralgia del Trigémino",
     intro: "Tratamiento quirúrgico especializado para neuralgia del trigémino.",
-    video: "/videos/VIDEO_NEURALGIA.MP4",
+    image: "/videos/FOTO_NDT.JPG",
     paragraphs: [
       "La neurectomía periférica del trigémino es un procedimiento quirúrgico seguro, sencillo y de bajo riesgo utilizado para tratar la neuralgia del trigémino refractaria (que no responde a fármacos) mediante la avulsión (extirpación parcial) de las ramas terminales del nervio.",
     ],
